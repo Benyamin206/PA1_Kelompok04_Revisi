@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+:root{
+    --rona:#722d2d;
+    --dark:#000000;
+}
+
+*{
+    font-family: 'Roboto Slab', serif;
+    font-size: large;
+    transition: .2s linear;
+/*    text-transform: capitalize;*/
+    
+}
+
+body{
+    background-color: #f5f8ff !important;
+    font-size:50%;
+}
+
+a,p{
+  font-size:80%;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.custom-highlight{
+    font-size: 18px;
+    color: red;
+}
+
+h4 .ml-2:hover{
+    color:var(--dark);
+}
+
+h4 span{
+    font-size: 2rem;
+    color:var(--dark);
+}
+
+h4 span:hover{
+    color:var(--rona);
+}
+
+
+
+/* global */
+section {
+    padding: 50px 0 100px;
+}
+
+
+/* Navigasi */
+
+nav .logo{
+    margin: 0;padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+a img{
+    background-size: cover; 
+    width: 70px; 
+    border-radius: 50%; 
+    margin-right: 10px;
+    border-radius:50% ;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #000000 !important;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .navbar-nav a:hover {
+    padding: 10px 20px;
+    color: white !important;
+    border-radius: 10px;
+    background-color: var(--rona);
+    border-bottom: 4px solid rgba(214, 147, 147, 0.3) !important;
+
+  }
+
+  #produk{
+    padding: 10px 20px;
+    color: white !important;
+    border-radius: 10px;
+    background-color: #722d2d;
+    border-bottom: 4px solid rgba(214, 147, 147, 0.3) !important;
+}
+
+  
+
+
+.navbar-brand img{
+    width: 80px;
+}
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Perbandingan aspek rasio 16:9 (56.25%) */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.button-value{
+    border: 2px solid #6759ff;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #722d2d;
+    cursor: pointer;
+}
+.active{
+    background-color: var(--rona) !important;
+    color: #ffffff;
+}
+
+.wrapper .btn:hover{
+    background-color: var(--rona) !important;
+
+}
+
+
+
+
+
+
+/* MEDIA */
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+  
+  @media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    header{
+        padding: 2rem;
+    }
+  }
+  
+  
+    @media (max-width: 576px) {
+        .d-flex.flex-row.flex-lg-column {
+            flex-direction: column;
+        }
+  
+        .col-4.rounded-4 {
+            margin-bottom: 10px;
+        }
+    }
+
+
+    @media (max-width: 767.98px) {
+        .navbar-nav {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .navbar-nav .nav-link {
+            padding: 1rem 0;
+            text-align: center;
+            border-top: 1px solid #dee2e6;
+        }
+    }
+
+    /* Atur ukuran konten lainnya pada tampilan mobile */
+    @media (max-width: 575.98px) {
+        .site-title {
+            font-size: 1.5rem;
+        }
+        .site-desc {
+            font-size: 0.875rem;
+        }
+        .site-btn1,
+        .site-btn2 {
+            font-size: 0.875rem;
+            padding: 0.5rem 1rem;
+        }
+        .card-title {
+            font-size: 1rem;
+        }
+        .card-text {
+            font-size: 0.875rem;
+        }
+        #heading-1 {
+            font-size: 1.5rem;
+        }
+        #para-1 {
+            font-size: 0.875rem;
+        }
+        .section-3 h3 {
+            font-size: 1rem;
+        }
+        .section-3 p {
+            font-size: 0.875rem;
+        }
+    }

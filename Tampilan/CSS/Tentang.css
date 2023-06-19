@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+:root{
+    --pink:#e84393;
+    --dark:#000000;
+}
+
+*{
+    font-family: 'Roboto Slab', serif;
+    font-size: large;
+    transition: .2s linear;
+}
+
+
+body{
+  background-color: #f5f8ff !important;
+  font-size:50%;
+}
+
+a,h1,p{
+font-size:80%;
+}
+
+h4{
+    font-size: 2rem;
+    color:var(--pink);
+}
+
+h4:hover{
+    color:var(--dark);
+}
+
+h4 span{
+    font-size: 2rem;
+    color:var(--dark);
+}
+
+h4 span:hover{
+    color:var(--pink);
+}
+
+
+
+/* global */
+section {
+    padding: 50px 0 100px;
+}
+
+
+/* Navigasi */
+
+nav .logo{
+    margin: 0;padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+a img{
+    background-size: cover; 
+    width: 70px; 
+    border-radius: 50%; 
+    margin-right: 10px;
+    border-radius:50% ;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #000000 !important;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .navbar-nav a:hover {
+    padding: 10px 20px;
+    color: white !important;
+    border-radius: 10px;
+    background-color: #722d2d;
+    border-bottom: 4px solid rgba(214, 147, 147, 0.3) !important;
+
+  }
+
+
+  #tentang{
+    padding: 10px 20px;
+    color: white !important;
+    border-radius: 10px;
+    background-color: #722d2d;
+    border-bottom: 4px solid rgba(214, 147, 147, 0.3) !important;
+}
+
+
+
+.navbar-brand img{
+    width: 80px;
+}
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Perbandingan aspek rasio 16:9 (56.25%) */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/*Site BTN*/
+
+.site-content{
+  background: url(../gambar/tigabelas.jpg) no-repeat ;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.site-title, .site-desc{
+  color: white;
+  font-family: 'Roboto';
+}
+.site-title{
+  margin-top: 30%;
+  margin-bottom: 6%;
+  font-size: 50px;
+}
+.site-desc{
+  font-size:14px;
+  padding-left: 15%;
+}
+.site-btn1{
+  background-color: rgb(33, 33, 33) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  color: white !important;
+}
+.site-btn2{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+
+}
+.site-btn1, .site-btn2{
+  margin-top: 5%;
+  margin-bottom: 40%;
+}
+
+/* Section 1 */
+.section-1 .heading-1 {
+  margin-top: 8%;
+  font-family: ('Poppins');
+}
+
+.section-1 .heading-2 {
+  font-size: 39px;
+  font-family: ('Poppins');
+}
+
+.section-1 .para-1{
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 5%;
+}
+
+.section-1 .card-text, .para-1 {
+  color: rgba(78, 78, 78, 0.59);
+}
+
+.section-1{
+  margin-bottom: 8%;
+}
+
+
+/* Section 2 */
+.section-2 .container-fluid{
+  background-image: url(../gambar/delapan.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+}
+
+
+
+.section-2 .heading-1{
+  margin-top: 20%;
+  font-size: 3.6rem;
+  font-family: 'Poppins';
+  width: 80%;
+  color: rgb(255, 255, 255);
+}
+
+.section-2 .para{
+  width: 80%;
+  font-size: 1.6rem;
+  font-family: 'Poppins';
+  color: rgb(255, 255, 255);
+  margin-bottom: 20%;
+}
+
+.section-2 .btn{
+
+  width: 35%;
+  padding: 2% 5%;
+}
+
+/* MEDIA */
+@keyframes zoomIn {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@media (max-width:450px){
+  html{
+      font-size: 50%;
+  }
+  header{
+      padding: 2rem;
+  }
+}
+
+
+  @media (max-width: 576px) {
+      .d-flex.flex-row.flex-lg-column {
+          flex-direction: column;
+      }
+
+      .col-4.rounded-4 {
+          margin-bottom: 10px;
+      }
+  }
+
+
+  @media (max-width: 767.98px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .navbar-nav .nav-link {
+        padding: 1rem 0;
+        text-align: center;
+        border-top: 1px solid #dee2e6;
+    }
+}
+
+/* Atur ukuran konten lainnya pada tampilan mobile */
+@media (max-width: 575.98px) {
+    .site-title {
+        font-size: 1.5rem;
+    }
+    .site-desc {
+        font-size: 0.875rem;
+    }
+    .site-btn1,
+    .site-btn2 {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .card-text {
+        font-size: 0.875rem;
+    }
+    #heading-1 {
+        font-size: 1.5rem;
+    }
+    #para-1 {
+        font-size: 0.875rem;
+    }
+    .section-3 h3 {
+        font-size: 1rem;
+    }
+    .section-3 p {
+        font-size: 0.875rem;
+    }
+}
+
+
+
